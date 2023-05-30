@@ -49,4 +49,12 @@ public class LoginPage extends AbstractComponents {
 
 
     }
+
+    public String getErrorMessage2() {
+        System.out.println("hello");
+        waitWebElementToAppear(errorMessage);
+        return errorMessage.getText();
+
+
+    }
 }
